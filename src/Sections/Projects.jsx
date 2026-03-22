@@ -40,7 +40,7 @@ const Projects = () => {
           )
         })}</ul>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-10 lg:px-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-0 sm:px-10 lg:px-0">
           {projFiltered?.map((proj, index)=>{
             return (
               <div key={index}>
@@ -60,22 +60,23 @@ const Projects = () => {
             )
           })}
         </div>
-
         
         <div className={`fixed transition-all ${openPopup !== null ? 'w-full h-full left-0 top-0 z-10 scale-100 opacity-100': 'scale-90 opacity-0'}`}>
           <div className='bg-black/85 fixed w-full h-full left-0 top-0' onClick={()=>{setOpenPopup(null)}}></div>
           <div className='bg-[#110932] w-11/12 sm:w-2xl fixed top-1/2 left-1/2 -translate-1/2 z-10 p-5'>
             <span className='cursor-pointer absolute right-0 top-0 bg-red-600 w-5 h-5 text-xl flex items-center justify-center' onClick={()=>{setOpenPopup(null)}}>&times;</span>
-            <img src={openPopup?.image} alt={openPopup?.heading} className='h-60 object-cover rounded-md mb-4 w-full object-top' />
+            <img src={openPopup?.image} alt={openPopup?.heading} className='h-30 sm:h-60 object-cover rounded-md mb-4 w-full object-top' />
             <h3 className='text-xl capitalize font-bold mb-2'>{openPopup?.heading}</h3>
-            <p className='text-xs text-gray-500 mb-3'>{openPopup?.description}</p>
-            {openPopup?.contribution && <p className='text-xs text-gray-500 mb-3'>{openPopup?.contribution}</p>}
-            {openPopup?.keyFeatures && 
-            <ul className='mb-4'>
-              {openPopup?.keyFeatures?.map((feat, findex)=>{
-                return <li key={findex} className='text-xs text-gray-500 mb-0.5 list-inside list-disc'>{feat}</li>
-              })}
-            </ul>}
+            <div className='max-h-75 overflow-auto'>
+              <p className='text-xs text-gray-500 mb-3'>{openPopup?.description}</p>
+              {openPopup?.contribution && <p className='text-xs text-gray-500 mb-3'>{openPopup?.contribution}</p>}
+              {openPopup?.keyFeatures && 
+              <ul className='mb-4'>
+                {openPopup?.keyFeatures?.map((feat, findex)=>{
+                  return <li key={findex} className='text-xs text-gray-500 mb-0.5 list-inside list-disc'>{feat}</li>
+                })}
+              </ul>}
+            </div>
             <ul className='flex flex-wrap gap-1 mb-4'>
               {openPopup?.skillsName?.map((skill,sindex)=>{
                 return(
@@ -84,7 +85,7 @@ const Projects = () => {
               })}
             </ul>
             <div className='flex justify-center gap-4 text-center'>
-              {openPopup?.gitLink && <a href={openPopup?.gitLink} target='_blank' className='bg-black/35 px-4 py-1.5 rounded-md w-1/2 hover:bg-red-600'>View Code</a>}
+              {openPopup?.gitLink && <a href={openPopup?.gitLink} target='_blank' className='bg-black/70 px-4 py-1.5 rounded-md w-1/2 hover:bg-red-600'>View Code</a>}
               <a href={openPopup?.webLink} target='_blank' className='bg-red-600 px-4 py-1.5 rounded-md w-1/2 hover:bg-red-500'>View Live</a>
             </div>
           </div>

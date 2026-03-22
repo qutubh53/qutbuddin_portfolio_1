@@ -21,12 +21,15 @@ import ecommerce_1 from './assets/zentro_ecommerce_site.jpg'
 import todoApp from './assets/todo_app.png'
 import countTimerGame from './assets/count_timer_app.png'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { IoMdMail } from "react-icons/io";
+
 
 export const navLinks = ['about', 'skills', 'experience', 'projects', 'contact']
 
 export const iconLinks = [
   {icons: FaLinkedin, url: 'https://www.linkedin.com/in/qutbuddin-millwala/'},
-  {icons: FaGithub, url: 'https://github.com/qutubh53'}
+  {icons: FaGithub, url: 'https://github.com/qutubh53'},
+  {icons: IoMdMail, url: 'mailto:qutubh53@gmail.com', class: 'lg:hidden'}
 ]
 
 export const aboutData = {

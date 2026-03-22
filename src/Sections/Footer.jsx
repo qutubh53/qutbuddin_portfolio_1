@@ -35,7 +35,7 @@ const Footer = ({navMenu, setIsActive}) => {
       <div className="flex space-x-4">
         {iconLinks.map((icon,i)=>{
             return (
-              <a key={i} href={icon.url} target="_blank" className="cursor-pointer hover:text-red-600 transition duration-300 text-xl">{<icon.icons />}</a>
+              <a key={i} href={icon.url} target="_blank" className={`cursor-pointer hover:text-red-600 transition duration-300 text-xl ${icon.class}`}>{<icon.icons />}</a>
             )
           })
         }

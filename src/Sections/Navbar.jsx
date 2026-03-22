@@ -21,7 +21,7 @@ export const Navbar = ({navMenu, isActive, setIsActive}) => {
   return (
     <>
       <div className={`fixed top-0 flex justify-between items-center text-white py-6 px-[4vw] md:px-[4vw] lg:px-[7vw] w-full ${isScroll ? 'backdrop-blur bg-[#110932]/50 z-9 shadow-lg' : ''}`}>
-        <div className="text-xl cursor-pointer select-none" onClick={()=>{
+        <div className="text-[17px] sm:text-xl cursor-pointer select-none" onClick={()=>{
           setIsActive('about');
           window.scroll(0, 0);
         }}>
@@ -32,13 +32,12 @@ export const Navbar = ({navMenu, isActive, setIsActive}) => {
           <span className="text-red-600 text-2xl align-middle">&gt;</span>
         </div>
 
-        
         <ul className="lg:flex space-x-5 hidden">
           {navLinks.map((nav,i)=>{
             return (
               <li key={i} className={`hover:text-red-600 transition duration-300 ${nav === isActive ? 'text-red-600' : ''}`}>
                 <button
-                  className='cursor-pointer'
+                  className='cursor-pointer outline-0'
                   onClick={()=> {
                     navMenu(nav);
                     setIsActive(nav);
@@ -49,16 +48,16 @@ export const Navbar = ({navMenu, isActive, setIsActive}) => {
           })}
         </ul>
 
-        <div className='flex gap-4'>
-          <div className="flex space-x-4">
+        <div className='flex gap-3 sm:gap-4'>
+          <div className="flex gap-3 sm:gap-4">
             {iconLinks.map((icon,i)=>{
                 return (
-                  <a key={i} href={icon.url} target="_blank" className="cursor-pointer hover:text-red-600 transition duration-300 text-xl">{<icon.icons />}</a>
+                  <a key={i} href={icon.url} target="_blank" className={`cursor-pointer hover:text-red-600 transition duration-300 text-lg sm:text-xl ${icon.class}`}>{<icon.icons />}</a>
                 )
               })
             }
           </div>
-          <button onClick={()=>{setIsNavOpen(true)}} className='lg:hidden'><LuAlignCenter className='text-2xl' /></button>
+          <button onClick={()=>{setIsNavOpen(true)}} className='lg:hidden'><LuAlignCenter className='text-xl sm:text-2xl' /></button>
         </div>      
       </div>
 
@@ -85,7 +84,7 @@ export const Navbar = ({navMenu, isActive, setIsActive}) => {
               return (
                 <li key={i} className={`hover:text-red-600 transition duration-300 ${nav === isActive ? 'text-red-600 font-semibold' : ''}`}>
                   <button
-                    className='cursor-pointer'
+                    className='cursor-pointer outline-0'
                     onClick={()=> {
                       navMenu(nav);
                       setIsActive(nav);
