@@ -47,11 +47,11 @@ const Projects = () => {
                 <div className='border-2 border-gray-200 bg-[#17122a] rounded-lg p-3 pb-5 shadow-[0_0_20px_rgb(39,28,80)] cursor-pointer transition-all hover:scale-105 hover:shadow-[0_0_20px_rgb(39,100,150)]' onClick={()=>{handlePopup(proj)}} >
                   <img src={proj.image} alt={proj.heading} className='h-30 object-cover rounded-md mb-4' />
                   <h3 className='capitalize font-bold mb-2'>{proj.heading}</h3>
-                  <p className='text-xs text-gray-500 mb-4 line-clamp-3'>{proj.description}</p>
+                  <p className='text-xs text-gray-300 mb-4 line-clamp-3'>{proj.description}</p>
                   <ul className='flex flex-wrap gap-1'>
                     {proj.skillsName.map((skill,sindex)=>{
                       return(
-                        <li key={sindex} className='border bg-[#d352fd]/30 text-[#1e021d] font-semibold text-[11px] px-2.5 py-0.5 rounded-2xl'>{skill}</li>
+                        <li key={sindex} className='border bg-[#d352fd]/30 text-gray-300 border-[#d352fd]/5 font-semibold text-[11px] px-2.5 py-0.5 rounded-2xl'>{skill}</li>
                       )
                     })}
                   </ul>
@@ -68,24 +68,24 @@ const Projects = () => {
             <img src={openPopup?.image} alt={openPopup?.heading} className='h-30 sm:h-60 object-cover rounded-md mb-4 w-full object-top' />
             <h3 className='text-xl capitalize font-bold mb-2'>{openPopup?.heading}</h3>
             <div className='max-h-75 overflow-auto'>
-              <p className='text-xs text-gray-500 mb-3'>{openPopup?.description}</p>
-              {openPopup?.contribution && <p className='text-xs text-gray-500 mb-3'>{openPopup?.contribution}</p>}
+              <p className='text-xs text-gray-300 mb-3'>{openPopup?.description}</p>
+              {openPopup?.contribution && <p className='text-xs text-gray-300 mb-3'>{openPopup?.contribution}</p>}
               {openPopup?.keyFeatures && 
               <ul className='mb-4'>
                 {openPopup?.keyFeatures?.map((feat, findex)=>{
-                  return <li key={findex} className='text-xs text-gray-500 mb-0.5 list-inside list-disc'>{feat}</li>
+                  return <li key={findex} className='text-xs text-gray-300 mb-0.5 list-inside list-disc'>{feat}</li>
                 })}
               </ul>}
             </div>
             <ul className='flex flex-wrap gap-1 mb-4'>
               {openPopup?.skillsName?.map((skill,sindex)=>{
                 return(
-                  <li key={sindex} className='border bg-[#d352fd]/30 text-[#1e021d] font-semibold text-[10px] px-1.5 py-0.5 rounded-2xl'>{skill}</li>
+                  <li key={sindex} className='border bg-[#d352fd]/30 text-gray-300 border-[#d352fd]/5 font-semibold text-[10px] px-1.5 py-0.5 rounded-2xl'>{skill}</li>
                 )
               })}
             </ul>
             <div className='flex justify-center gap-4 text-center'>
-              {openPopup?.gitLink && <a href={openPopup?.gitLink} target='_blank' className='bg-black/70 px-4 py-1.5 rounded-md w-1/2 hover:bg-red-600'>View Code</a>}
+              {openPopup?.gitLink && <a href={openPopup?.gitLink} target='_blank' className='bg-white/18 px-4 py-1.5 rounded-md w-1/2 hover:bg-red-600'>View Code</a>}
               <a href={openPopup?.webLink} target='_blank' className='bg-red-600 px-4 py-1.5 rounded-md w-1/2 hover:bg-red-500'>View Live</a>
             </div>
           </div>

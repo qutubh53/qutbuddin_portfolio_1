@@ -34,7 +34,7 @@ export const iconLinks = [
 
 export const aboutData = {
   name: 'Qutbuddin Millwala',
-  description: 'Frontend Developer with 4+ years of experience in building responsive web applications using HTML, CSS, JavaScript, and Bootstrap, along with hands-on experience in React.js. Skilled in developing scalable UI components, implementing modern frontend practices, and optimizing user experience. Recently built multiple React.js projects, including an ecommerce application with routing, category filtering, and cart management.',
+  description: 'Result-oriented Frontend Developer with 4+ years of professional experience in crafting high-performance, pixel-perfect user interfaces. Expert in HTML5, CSS3, and Bootstrap 4/5, with a strong focus on responsive design and cross-browser compatibility. Currently specializing in React.js to build scalable web applications, bridging the gap between complex designs and functional code. Proven track record of delivering high-quality UI for international clients.',
   button: 'Download cv'
 }
 
@@ -72,11 +72,10 @@ export const workExperience = [
     startDate: 'Aug 2023',
     endDate: 'March 2025',
     description: [
-      'Built responsive web applications using HTML, CSS, and React.js.',
-      'Developed reusable UI components using React state and props.',
-      'Worked on long-term event-based Angular project.',
-      'Collaborated with teams and maintained code quality through reviews.',
-      "Improved UI responsiveness and enhanced user experience across multiple projects."
+      'Built reusable UI components and handled state-driven interfaces using React.js and JavaScript.',
+      'Led the frontend development for long-term event-based projects, ensuring seamless user experiences.',
+      'Successfully delivered complex layouts for international clients, maintaining 100% design accuracy.',
+      'Improved development efficiency by implementing modern frontend practices and scalable CSS architectures.'
     ],
     skillsName: ['HTML', 'CSS', 'JavaScript', 'Bootstrap 5', 'Git/Github', 'Figma', 'Sketch UI']
   },  
@@ -87,11 +86,10 @@ export const workExperience = [
     startDate: 'June 2020',
     endDate: 'July 2023',
     description: [
-      'Worked on real-world frontend projects using React.js and Angular.',
-      'Developed responsive UI components using HTML, CSS, JavaScript, and Bootstrap.',
-      'Collaborated with cross-functional teams and participated in code reviews.',
-      'Followed agile methodologies to improve development efficiency.',
-      'Improved UI responsiveness and enhanced user experience across multiple projects.'
+      'Developed high-fidelity, responsive UI components for large-scale projects using HTML, CSS, and Bootstrap.',
+      'Optimized existing codebases to improve UI responsiveness and page load performance across multiple devices.',
+      'Collaborated with UI/UX designers to translate Figma/Photoshop assets into pixel-perfect web interfaces.',
+      'Worked in an agile environment, participating in daily scrums and code reviews to maintain high code quality.'
     ],
     skillsName: ['HTML', 'CSS', 'JavaScript', 'Bootstrap 4/5', 'Git/Github', 'Wordpress', 'Figma']
   },
@@ -111,6 +109,33 @@ export const workExperience = [
 ]
 
 export const projectData = [
+  {
+    image: questroyalFine,
+    category: 'client',
+    heading: 'Questroyal Fine Art',
+    description: 'A fine art gallery website showcasing curated collections of American paintings, artists, and exhibitions',
+    contribution: 'Developed responsive UI layouts and components using HTML5, CSS3, and Bootstrap 4. Focused on maintaining design consistency and optimizing pages for multiple screen sizes.',
+    skillsName: ['HTML5', 'CSS3', 'JQuery', 'Bootstrap 4', 'Mobile Responsive'],
+    webLink: 'https://www.questroyalfineart.com/'
+  },
+  {
+    image: goWabi,
+    category: 'client',
+    heading: 'GoWabi beauty and wellness',
+    description: 'An online marketplace for booking beauty, spa, salon, and wellness services with real-time availability and promotional offers.',
+    contribution: 'Developed responsive UI layouts and front-end sections using HTML5, CSS3, and Bootstrap 4. Ensured clean structure and optimized page responsiveness across multiple devices',
+    skillsName: ['HTML5', 'CSS3', 'Javascript', 'Bootstrap 4', 'Mobile Responsive'],
+    webLink: 'https://www.gowabi.com/en'
+  },
+  {
+    image: onTrack,
+    category: 'client',
+    heading: 'OnTrack Tech Group',
+    description: 'A platform designed to manage large-scale events and operations with tools for scheduling, incident tracking, and workflow coordination.',
+    contribution: 'Built responsive front-end layouts and UI components using HTML5, CSS3, and Bootstrap 5. Focused on maintaining consistent design and improving cross-device compatibility.',
+    skillsName: ['HTML5', 'CSS3', 'Javascript', 'Bootstrap 5', 'Mobile Responsive'],
+    webLink: 'https://www.ontrack.co/'
+  },
   {
     image: ecommerce_1,
     category: 'react Js',
@@ -141,32 +166,5 @@ export const projectData = [
     skillsName: ['HTML5', 'CSS3', 'Javascript', 'React JS'],
     webLink: 'https://count-timer-game.netlify.app/',
     gitLink: 'https://github.com/qutubh53/counter-timer-app'
-  },
-  {
-    image: questroyalFine,
-    category: 'client',
-    heading: 'Questroyal Fine Art',
-    description: 'A fine art gallery website showcasing curated collections of American paintings, artists, and exhibitions',
-    contribution: 'Developed responsive UI layouts and components using HTML5, CSS3, and Bootstrap 4. Focused on maintaining design consistency and optimizing pages for multiple screen sizes.',
-    skillsName: ['HTML5', 'CSS3', 'JQuery', 'Bootstrap 4', 'Mobile Responsive'],
-    webLink: 'https://www.questroyalfineart.com/'
-  },
-  {
-    image: goWabi,
-    category: 'client',
-    heading: 'GoWabi beauty and wellness',
-    description: 'An online marketplace for booking beauty, spa, salon, and wellness services with real-time availability and promotional offers.',
-    contribution: 'Developed responsive UI layouts and front-end sections using HTML5, CSS3, and Bootstrap 4. Ensured clean structure and optimized page responsiveness across multiple devices',
-    skillsName: ['HTML5', 'CSS3', 'Javascript', 'Bootstrap 4', 'Mobile Responsive'],
-    webLink: 'https://www.gowabi.com/en'
-  },
-  {
-    image: onTrack,
-    category: 'client',
-    heading: 'OnTrack Tech Group',
-    description: 'A platform designed to manage large-scale events and operations with tools for scheduling, incident tracking, and workflow coordination.',
-    contribution: 'Built responsive front-end layouts and UI components using HTML5, CSS3, and Bootstrap 5. Focused on maintaining consistent design and improving cross-device compatibility.',
-    skillsName: ['HTML5', 'CSS3', 'Javascript', 'Bootstrap 5', 'Mobile Responsive'],
-    webLink: 'https://www.ontrack.co/'
-  }
+  }  
 ]

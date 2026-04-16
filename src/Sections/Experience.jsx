@@ -28,7 +28,7 @@ const Experience = () => {
                     <ul className='pl-4'>
                       {exp.description.map((desc, i)=>{
                         return(
-                          <li key={i} className='text-xs text-gray-500 leading-4.5 list-disc mb-1.5'>{desc}</li>
+                          <li key={i} className='text-xs text-gray-300 leading-4.5 list-disc mb-1.5'>{desc}</li>
                         )
                       })}
                     </ul>
@@ -36,7 +36,7 @@ const Experience = () => {
                     <ul className='flex flex-wrap gap-1'>
                       {exp.skillsName.map((name, i)=>{
                         return(
-                          <li key={i} className='border bg-[#d352fd]/30 text-[#1e021d] font-semibold text-xs px-2.5 py-1 rounded-2xl'>{name}</li>
+                          <li key={i} className='border bg-[#d352fd]/30 text-gray-300 border-[#d352fd]/5 font-semibold text-xs px-2.5 py-1 rounded-2xl'>{name}</li>
                         )
                       })}
                     </ul>
